@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Terrasol Parcelas</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">Terrasol Parcelas</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="nosotros.html">Nosotros</a></li>
+                        <li class="nav-item"><a class="nav-link" href="parcelas.html">Parcelas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="preguntas-frecuentes.html">Preguntas Frecuentes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main class="container mt-5 pt-5">
+        <section id="contacto">
+            <h1>Contacto</h1>
+            <p>Estamos aquí para ayudarle. Si tiene alguna pregunta sobre nuestras parcelas o casas, o si desea programar una visita, no dude en ponerse en contacto con nosotros. Puede completar el formulario a continuación o llamarnos directamente. ¡Esperamos con interés escuchar de usted!</p>
+            
+            <form id="contactForm" class="needs-validation" novalidate>
+                <div class="mb-3">
+                    <label for="nombre" class="form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    <div class="invalid-feedback">Por favor, ingrese su nombre.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                    <div class="invalid-feedback">Por favor, ingrese un email válido.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="direccion" class="form-label">Dirección:</label>
+                    <input type="text" class="form-control" id="direccion" name="direccion" required>
+                    <div class="invalid-feedback">Por favor, ingrese su dirección.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="mensaje" class="form-label">Mensaje:</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="3" required></textarea>
+                    <div class="invalid-feedback">Por favor, ingrese su mensaje.</div>
+                </div>
+                <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" id="terminos" name="terminos" required>
+                    <label class="form-check-label" for="terminos">Acepto los términos y condiciones</label>
+                    <div class="invalid-feedback">Debe aceptar los términos y condiciones.</div>
+                </div>
+                <p id="error" class="text-danger"></p>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+            
+        </section>
+    </main>
+    
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 mb-2 mb-md-0">
+                    <p>Contacto: +56 9 5018 6583</p>
+                </div>
+                <div class="col-12 col-md-4 mb-2 mb-md-0">
+                    <p>Dirección: Entre Talca y la Región de Los Lagos</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <p>Email: info@terrasolparcelas.cl</p>
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-12">
+                    <a href="https://www.facebook.com/tuparcelaenelsurdechile" target="_blank" rel="noopener noreferrer" class="text-white me-2" aria-label="Facebook de Terrasol Parcelas">Facebook</a>
+                    <a href="https://www.instagram.com/terrasol_parcelas" target="_blank" rel="noopener noreferrer" class="text-white ms-2" aria-label="Instagram de Terrasol Parcelas">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
